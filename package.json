@@ -1,0 +1,25 @@
+{
+  "name": "expo-sqlite-legacy-adapter",
+  "version": "0.1.0",
+  "description": "Adapter for the newer (SDK 51+) Expo-SQLite to behave in a WebSQL compatible way similar to the original legacy adapter",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expo",
+    "sqlite",
+    "legacy",
+    "sdk51",
+    "sdk50",
+    "deprecated",
+    "backwards",
+    "compatibility",
+    "react-native"
+  ],
+  "author": "Switt Kongdachalert",
+  "license": "WTFPL",
+  "files": [
+    "**/*"
+  ]
+}
