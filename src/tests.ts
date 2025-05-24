@@ -364,9 +364,9 @@ export async function runComparisonTests(): Promise<void> {
       name: test.name,
       expected: test.expected,
       legacy: legacyRes,
-      legacyPass: legacyRes,
+      legacyPass: legacyPass,
       shim: shimRes,
-      shimPass: shimRes
+      shimPass: shimPass
     });
   }
 

@@ -52,6 +52,9 @@ Results are as follows, which shows rather compliant behaviour with the original
 As for the error codes, I cannot guarantee full 100% same behaviour. YMMV. Open to PRs.
 
 ```
+ LOG  🏁 Running WebSQL tests on a clean slate…
+ LOG  🔍 Detailed Results:
+ LOG  
 • Test#1: INSERT returns insertId & rowsAffected=1
  LOG      Expected: [predicate]
  LOG      Legacy : ✔ PASS → {"insertId":1,"rowsAffected":1}
@@ -70,7 +73,7 @@ As for the error codes, I cannot guarantee full 100% same behaviour. YMMV. Open 
 • Test#4: write in readTransaction throws
  LOG      Expected: true
  LOG      Legacy : ✖ FAIL → false
- LOG      Shim   : ✔ PASS → true
+ LOG      Shim   : ✖ FAIL → false
  LOG  
 • Test#5: no-callback executeSql silently succeeds
  LOG      Expected: true
@@ -104,8 +107,8 @@ As for the error codes, I cannot guarantee full 100% same behaviour. YMMV. Open 
  LOG  
 ✅ Summary:
  LOG      Legacy failures: 1/10
- LOG      Shim   failures: 0/10
- LOG  🎉 Shim is fully spec-compliant!
+ LOG      Shim   failures: 1/10
+ WARN  ⚠️ Shim has spec deviations—please review above.
 ```
 ## License
 
